@@ -1,0 +1,387 @@
+export default function TakeActionNGOWebsite() {
+  const programs = [
+    {
+      title: 'Sustainable Agriculture',
+      description:
+        'Training farmers on climate-smart agriculture, organic farming, and modern techniques that increase food production while protecting the environment.',
+    },
+    {
+      title: 'Environmental Protection',
+      description:
+        'Tree planting campaigns, waste management education, and community clean-up activities to protect ecosystems and reduce pollution.',
+    },
+    {
+      title: 'Youth & Women Empowerment',
+      description:
+        'Supporting women and young people through vocational training, agricultural support, and entrepreneurship opportunities.',
+    },
+    {
+      title: 'Organic Farming Promotion',
+      description:
+        'Promoting organic farming practices that improve soil health, reduce chemical pollution, protect biodiversity, and create a healthier environment for future generations.',
+    },
+  ];
+
+  const gallery = [
+    'Community farming projects',
+    'Tree planting campaigns',
+    'Environmental awareness workshops',
+    'Youth agricultural training',
+  ];
+
+  return (
+    <div className="min-h-screen bg-green-50 text-gray-800 font-sans">
+      {/* Header */}
+      <header className="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div className="flex items-center gap-4">
+            <img
+              src="/logo.png"
+              alt="Take Action Agr & Environmental Protection Logo"
+              className="w-16 h-16 rounded-full object-cover bg-white p-1 shadow-md"
+            />
+
+            <div>
+              <h1 className="text-2xl md:text-3xl font-bold">
+              Take Action Agr & Environmental Protection
+            </h1>
+              <p className="text-sm text-green-100">
+              Building sustainable communities through agriculture and environmental care.
+            </p>
+            </div>
+          </div>
+
+          <nav className="hidden md:flex gap-6 text-sm font-medium">
+            <a href="#about" className="hover:text-yellow-300 transition">
+              About
+            </a>
+            <a href="#programs" className="hover:text-yellow-300 transition">
+              Programs
+            </a>
+            <a href="#gallery" className="hover:text-yellow-300 transition">
+              Gallery
+            </a>
+            <a href="#contact" className="hover:text-yellow-300 transition">
+              Contact
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-gradient-to-r from-green-700 to-emerald-500 text-white py-24 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 className="text-5xl font-extrabold leading-tight mb-6">
+              Protecting Nature. Empowering Communities.
+            </h2>
+
+            <p className="text-lg text-green-100 mb-8 leading-relaxed">
+              Take Action Agr & Environmental Protection is a non-governmental organization dedicated to sustainable agriculture, environmental conservation, and community development.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-yellow-400 hover:bg-yellow-300 text-green-900 px-6 py-3 rounded-2xl font-semibold shadow-lg transition">
+                Donate Now
+              </button>
+
+              <button className="border border-white hover:bg-white hover:text-green-700 px-6 py-3 rounded-2xl font-semibold transition">
+                Join Our Mission
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl">
+            <div className="grid grid-cols-2 gap-6 text-center">
+              <div className="bg-white/10 rounded-2xl p-6">
+                <h3 className="text-4xl font-bold">1,500+</h3>
+                <p className="text-green-100 mt-2">Farmers Trained</p>
+              </div>
+
+              <div className="bg-white/10 rounded-2xl p-6">
+                <h3 className="text-4xl font-bold">20K</h3>
+                <p className="text-green-100 mt-2">Trees Planted</p>
+              </div>
+
+              <div className="bg-white/10 rounded-2xl p-6">
+                <h3 className="text-4xl font-bold">35</h3>
+                <p className="text-green-100 mt-2">Communities Reached</p>
+              </div>
+
+              <div className="bg-white/10 rounded-2xl p-6">
+                <h3 className="text-4xl font-bold">100+</h3>
+                <p className="text-green-100 mt-2">Volunteers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="about" className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-4xl font-bold text-green-800 mb-6">
+              About Our Organization
+            </h2>
+
+            <p className="text-lg leading-relaxed text-gray-700 mb-6">
+              We are committed to improving livelihoods through sustainable agricultural practices, organic farming promotion, and environmental protection initiatives. Our mission is to support communities with education, resources, and opportunities that create long-term positive impact.
+            </p>
+
+            <p className="text-lg leading-relaxed text-gray-700">
+              Through partnerships, volunteer programs, and grassroots action, we aim to create healthier environments, stronger food systems, and empowered local communities.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            <div className="bg-green-100 rounded-3xl p-8 shadow-md">
+              <h3 className="text-2xl font-bold text-green-800 mb-3">Mission</h3>
+              <p className="text-gray-700">
+                Promote sustainable development through agriculture and environmental protection.
+              </p>
+            </div>
+
+            <div className="bg-yellow-100 rounded-3xl p-8 shadow-md mt-10">
+              <h3 className="text-2xl font-bold text-yellow-700 mb-3">Vision</h3>
+              <p className="text-gray-700">
+                A greener future with empowered communities and healthy ecosystems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Programs */}
+      <section id="programs" className="py-20 px-6 bg-green-100">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-bold text-green-900 mb-4">
+              Our Programs
+            </h2>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              We create impactful initiatives focused on agriculture, environmental sustainability, and social empowerment.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {programs.map((program, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 transition duration-300"
+              >
+                <div className="w-16 h-16 rounded-2xl bg-green-700 text-white flex items-center justify-center text-2xl font-bold mb-6">
+                  {index + 1}
+                </div>
+
+                <h3 className="text-2xl font-bold text-green-800 mb-4">
+                  {program.title}
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed">
+                  {program.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section id="gallery" className="py-20 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-bold text-green-800 mb-4">
+              Project Gallery
+            </h2>
+            <p className="text-lg text-gray-700">
+              Highlights from our environmental and agricultural activities.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            {gallery.map((item, index) => (
+              <div
+                key={index}
+                className="h-64 rounded-3xl bg-gradient-to-br from-green-700 to-emerald-400 text-white p-6 flex items-end shadow-lg hover:scale-105 transition duration-300"
+              >
+                <h3 className="text-xl font-bold">{item}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Annual Report */}
+      <section className="py-20 px-6 bg-emerald-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-bold text-green-900 mb-4">
+              Annual Impact Report
+            </h2>
+            <p className="text-lg text-gray-700 max-w-4xl mx-auto">
+              Our yearly report highlights the progress made through agricultural training, environmental activities, and material and financial support provided to vulnerable local communities.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white rounded-3xl shadow-lg p-8 border border-green-100">
+              <h3 className="text-2xl font-bold text-green-800 mb-4">
+                Agricultural Training
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">
+                During the year, our organization trained farmers and youth groups on sustainable farming methods, crop management, soil conservation, and climate-smart agriculture.
+              </p>
+
+              <ul className="space-y-2 text-gray-700">
+                <li>✅ 1,500+ farmers trained</li>
+                <li>✅ 45 agricultural workshops organized</li>
+                <li>✅ Improved crop productivity in rural communities</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-3xl shadow-lg p-8 border border-green-100">
+              <h3 className="text-2xl font-bold text-green-800 mb-4">
+                Community Support
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">
+                We provided material support to families, schools, women groups, and farmers through donations and community outreach programs.
+              </p>
+
+              <ul className="space-y-2 text-gray-700">
+                <li>✅ Distribution of farming tools and seeds</li>
+                <li>✅ Educational materials for local schools</li>
+                <li>✅ Support for vulnerable households</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-3xl shadow-lg p-8 border border-green-100">
+              <h3 className="text-2xl font-bold text-green-800 mb-4">
+                Financial Assistance
+              </h3>
+
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Through donor partnerships and fundraising activities, we delivered financial support to community-based agricultural and environmental initiatives.
+              </p>
+
+              <ul className="space-y-2 text-gray-700">
+                <li>✅ Small grants for farmers and cooperatives</li>
+                <li>✅ Youth entrepreneurship support</li>
+                <li>✅ Emergency assistance for local communities</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-green-800 text-white rounded-3xl p-10 shadow-2xl text-center">
+            <h3 className="text-3xl font-bold mb-4">
+              Transparency & Accountability
+            </h3>
+
+            <p className="text-lg text-green-100 leading-relaxed max-w-4xl mx-auto">
+              Take Action Agr & Environmental Protection remains committed to responsible management of resources and transparent reporting of all activities carried out in support of local communities and environmental sustainability.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Call To Action */}
+      <section className="py-20 px-6 bg-green-800 text-white text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-5xl font-bold mb-6">
+            Together We Can Protect Our Environment
+          </h2>
+
+          <p className="text-lg text-green-100 mb-8 leading-relaxed">
+            Become a volunteer, partner, or donor and help us create sustainable solutions for communities and future generations.
+          </p>
+
+          <button className="bg-yellow-400 hover:bg-yellow-300 text-green-900 px-8 py-4 rounded-2xl font-bold shadow-xl transition text-lg">
+            Support Our Work
+          </button>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="py-20 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+          <div>
+            <h2 className="text-4xl font-bold text-green-800 mb-6">
+              Contact Us
+            </h2>
+
+            <p className="text-lg text-gray-700 mb-8">
+              We welcome partnerships, volunteers, and supporters from around the world.
+            </p>
+
+            <div className="space-y-4 text-gray-700 text-lg">
+              <p>📍 Douala, Cameroon</p>
+              <p>📧 tackeaction@gmail.com</p>
+              <p>📞 +237 672 390 843</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-8">
+            <form className="space-y-6">
+              <div>
+                <label className="block text-sm font-semibold mb-2">Full Name</label>
+                <input
+                  type="text"
+                  className="w-full border border-gray-300 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+                  placeholder="Enter your name"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold mb-2">Email Address</label>
+                <input
+                  type="email"
+                  className="w-full border border-gray-300 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+                  placeholder="Enter your email"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold mb-2">Message</label>
+                <textarea
+                  rows="5"
+                  className="w-full border border-gray-300 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+                  placeholder="Write your message"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-green-700 hover:bg-green-800 text-white py-3 rounded-2xl font-semibold shadow-md transition"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-green-900 text-green-100 py-8 px-6">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+          <p>
+            © 2026 Take Action Agr & Environmental Protection. All rights reserved.
+          </p>
+
+          <div className="flex gap-6 text-sm">
+            <a href="#" className="hover:text-yellow-300 transition">
+              Facebook
+            </a>
+            <a href="#" className="hover:text-yellow-300 transition">
+              Instagram
+            </a>
+            <a href="#" className="hover:text-yellow-300 transition">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
